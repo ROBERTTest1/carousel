@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logi sisse</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Discgolfi Elamus</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pealehele</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogi.html">Blogi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tooted.html">Tooted</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html">Logi sisse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2>Logi sisse</h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Sisesta e-mail"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Salasõna</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Sisesta salasõna"
+          />
+        </div>
+        <button type="submit" class="btn btn-danger">Logi sisse</button>
+      </form>
+    </div>
+
+    <footer class="mt-auto text-center bg-dark">
+      <p class="mb-0 text-white">&copy; 2025 Discgolfi Elamus</p>
+    </footer>
+  </body>
+</html>
