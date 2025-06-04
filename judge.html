@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynamic Discs Judge - Discgolfi Elamus</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Discgolfi Elamus</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pealehele</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogi.html">Blogi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tooted.html">Tooted</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Logi sisse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Toast container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="cartToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Discgolfi Elamus</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Toode lisatud ostukorvi!</div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img
+            src="images/judge.webp"
+            class="img-fluid rounded"
+            alt="Dynamic Discs Judge"
+          />
+        </div>
+        <div class="col-md-8">
+          <h1>Dynamic Discs Judge</h1>
+          <p class="text-muted">Putter</p>
+          <p>
+            <b>Tehnilised andmed:</b><br />
+            Kiirus: 2 | Glide: 4 | Turn: 0 | Fade: 1
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <p class="text-primary fw-bold fs-4">Hind: 16.99€</p>
+          <button class="btn btn-primary btn-lg" onclick="showToast()">
+            Lisa ostukorvi
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2>Lisainfo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-auto text-center">
+      <p>&copy; 2025 Discgolfi Elamus</p>
+    </footer>
+
+    <script>
+      function showToast() {
+        const toast = new bootstrap.Toast(document.getElementById("cartToast"));
+        toast.show();
+      }
+    </script>
+  </body>
+</html>

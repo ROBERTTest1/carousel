@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tooted - Discgolfi Elamus</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Discgolfi Elamus</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Pealehele</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogi.html">Blogi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tooted.html">Tooted</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Logi sisse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="cartToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Discgolfi Elamus</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Toode lisatud ostukorvi!</div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <h1 class="mb-4"><b>Populaarsed Discgolfi Ketad</b></h1>
+
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <a href="destroyer.html">
+            <img
+              src="images/dessu.jpg"
+              class="img-fluid rounded"
+              alt="Innova Destroyer"
+            />
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>
+            <a href="destroyer.html" class="text-decoration-none text-dark"
+              >Innova Destroyer</a
+            >
+          </h3>
+          <p class="text-muted">Distance Driver</p>
+          <p>
+            <b>Tehnilised andmed:</b><br />
+            Kiirus: 12 | Glide: 5 | Turn: -3 | Fade: 3
+          </p>
+          <p>
+            Innova Destroyer on üks populaarsemaid distance driver kettaid
+            maailmas. See on suurepärane valik kogenud mängijatele, kes otsivad
+            pikka ja stabiilset viset. Ketta kõrge kiirus ja mõõdukas ületurn
+            teevad sellest ideaalse valiku tuulises ilmas.
+          </p>
+          <p class="text-primary fw-bold">Hind: 24.99€</p>
+          <a href="destroyer.html" class="btn btn-primary">Vaata lähemalt</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <a href="buzzz.html">
+            <img
+              src="images/buzzz.avif"
+              class="img-fluid rounded"
+              alt="Discraft Buzzz"
+            />
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>
+            <a href="buzzz.html" class="text-decoration-none text-dark"
+              >Discraft Buzzz</a
+            >
+          </h3>
+          <p class="text-muted">Mid-Range</p>
+          <p>
+            <b>Tehnilised andmed:</b><br />
+            Kiirus: 5 | Glide: 4 | Turn: -1 | Fade: 1
+          </p>
+          <p>
+            Discraft Buzzz on üks parimaid mid-range kettaid turul. See on
+            stabiilne ja usaldusväärne ketas, mis sobib nii algajatele kui ka
+            kogenud mängijatele. Buzzz on suurepärane valik täpsete visete jaoks
+            keskmisel kaugusel.
+          </p>
+          <p class="text-primary fw-bold">Hind: 19.99€</p>
+          <a href="buzzz.html" class="btn btn-primary">Vaata lähemalt</a>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <a href="judge.html">
+            <img
+              src="images/judge.webp"
+              class="img-fluid rounded"
+              alt="Dynamic Discs Judge"
+            />
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>
+            <a href="judge.html" class="text-decoration-none text-dark"
+              >Dynamic Discs Judge</a
+            >
+          </h3>
+          <p class="text-muted">Putter</p>
+          <p>
+            <b>Tehnilised andmed:</b><br />
+            Kiirus: 2 | Glide: 4 | Turn: 0 | Fade: 1
+          </p>
+          <p>
+            Dynamic Discs Judge on populaarne putter, mis sobib suurepäraselt
+            nii putting'uks kui ka lähenemisviseteks. Ketta stabiilne käitumine
+            ja hea käepide teevad sellest usaldusväärse valiku kõigi
+            oskustasemete mängijatele.
+          </p>
+          <p class="text-primary fw-bold">Hind: 16.99€</p>
+          <a href="judge.html" class="btn btn-primary">Vaata lähemalt</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-auto text-center">
+      <p>&copy; 2025 Discgolfi Elamus</p>
+    </footer>
+
+    <script>
+      function showToast() {
+        const toast = new bootstrap.Toast(document.getElementById("cartToast"));
+        toast.show();
+      }
+    </script>
+  </body>
+</html>
