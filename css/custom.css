@@ -1,0 +1,21 @@
+body,
+.bg-dark-subtle {
+  background-color: #fff !important;
+  color: #222;
+}
+
+.navbar,
+.bg-dark {
+  background-color: #800020 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+footer {
+  background-color: #800020 !important;
+  color: #fff;
+  padding: 1rem 0;
+}
